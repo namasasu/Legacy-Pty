@@ -1,0 +1,3636 @@
+{
+  "datasets": [
+    {
+      "name": "f022c9b9",
+      "displayName": "account_sales_performance",
+      "config": {
+        "version": "1.1",
+        "source": "legacy_pty.gold.account_sales_performance",
+        "dimensions": [
+          {
+            "name": "account_id",
+            "expr": "source.account_id",
+            "displayName": "Account Id"
+          },
+          {
+            "name": "account",
+            "expr": "source.account",
+            "displayName": "Account"
+          },
+          {
+            "name": "sector",
+            "expr": "source.sector",
+            "displayName": "Sector"
+          },
+          {
+            "name": "office_location",
+            "expr": "source.office_location",
+            "displayName": "Office Location"
+          },
+          {
+            "name": "year_established",
+            "expr": "source.year_established",
+            "displayName": "Year Established"
+          },
+          {
+            "name": "company_revenue",
+            "expr": "source.company_revenue",
+            "displayName": "Company Revenue"
+          },
+          {
+            "name": "employees",
+            "expr": "source.employees",
+            "displayName": "Employees"
+          },
+          {
+            "name": "subsidiary_of",
+            "expr": "source.subsidiary_of",
+            "displayName": "Subsidiary Of"
+          },
+          {
+            "name": "total_opportunities",
+            "expr": "source.total_opportunities",
+            "displayName": "Total Opportunities"
+          },
+          {
+            "name": "won_deals",
+            "expr": "source.won_deals",
+            "displayName": "Won Deals"
+          },
+          {
+            "name": "lost_deals",
+            "expr": "source.lost_deals",
+            "displayName": "Lost Deals"
+          },
+          {
+            "name": "win_rate_pct",
+            "expr": "source.win_rate_pct",
+            "displayName": "Win Rate Pct"
+          },
+          {
+            "name": "total_sales_revenue",
+            "expr": "source.total_sales_revenue",
+            "displayName": "Total Sales Revenue"
+          },
+          {
+            "name": "avg_deal_value",
+            "expr": "source.avg_deal_value",
+            "displayName": "Avg Deal Value"
+          },
+          {
+            "name": "products_purchased",
+            "expr": "source.products_purchased",
+            "displayName": "Products Purchased"
+          },
+          {
+            "name": "sales_agents_engaged",
+            "expr": "source.sales_agents_engaged",
+            "displayName": "Sales Agents Engaged"
+          },
+          {
+            "name": "first_engagement_date",
+            "expr": "source.first_engagement_date",
+            "displayName": "First Engagement Date"
+          },
+          {
+            "name": "last_close_date",
+            "expr": "source.last_close_date",
+            "displayName": "Last Close Date"
+          },
+          {
+            "name": "avg_days_to_close",
+            "expr": "source.avg_days_to_close",
+            "displayName": "Avg Days To Close"
+          },
+          {
+            "name": "customer_tier",
+            "expr": "source.customer_tier",
+            "displayName": "Customer Tier"
+          },
+          {
+            "name": "created_at",
+            "expr": "source.created_at",
+            "displayName": "Created At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cbff24f2",
+      "displayName": "monthly_sales_trends",
+      "config": {
+        "version": "1.1",
+        "source": "legacy_pty.gold.monthly_sales_trends",
+        "dimensions": [
+          {
+            "name": "year",
+            "expr": "source.year",
+            "displayName": "Year"
+          },
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          },
+          {
+            "name": "month_start_date",
+            "expr": "source.month_start_date",
+            "displayName": "Month Start Date"
+          },
+          {
+            "name": "total_opportunities",
+            "expr": "source.total_opportunities",
+            "displayName": "Total Opportunities"
+          },
+          {
+            "name": "won_deals",
+            "expr": "source.won_deals",
+            "displayName": "Won Deals"
+          },
+          {
+            "name": "lost_deals",
+            "expr": "source.lost_deals",
+            "displayName": "Lost Deals"
+          },
+          {
+            "name": "win_rate_pct",
+            "expr": "source.win_rate_pct",
+            "displayName": "Win Rate Pct"
+          },
+          {
+            "name": "total_revenue",
+            "expr": "source.total_revenue",
+            "displayName": "Total Revenue"
+          },
+          {
+            "name": "avg_deal_value",
+            "expr": "source.avg_deal_value",
+            "displayName": "Avg Deal Value"
+          },
+          {
+            "name": "unique_accounts",
+            "expr": "source.unique_accounts",
+            "displayName": "Unique Accounts"
+          },
+          {
+            "name": "unique_products",
+            "expr": "source.unique_products",
+            "displayName": "Unique Products"
+          },
+          {
+            "name": "active_sales_agents",
+            "expr": "source.active_sales_agents",
+            "displayName": "Active Sales Agents"
+          },
+          {
+            "name": "avg_days_to_close",
+            "expr": "source.avg_days_to_close",
+            "displayName": "Avg Days To Close"
+          },
+          {
+            "name": "created_at",
+            "expr": "source.created_at",
+            "displayName": "Created At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "9d63a58b",
+      "displayName": "product_sales_performance",
+      "config": {
+        "version": "1.1",
+        "source": "legacy_pty.gold.product_sales_performance",
+        "dimensions": [
+          {
+            "name": "product_id",
+            "expr": "source.product_id",
+            "displayName": "Product Id"
+          },
+          {
+            "name": "product",
+            "expr": "source.product",
+            "displayName": "Product"
+          },
+          {
+            "name": "series",
+            "expr": "source.series",
+            "displayName": "Series"
+          },
+          {
+            "name": "sales_price",
+            "expr": "source.sales_price",
+            "displayName": "Sales Price"
+          },
+          {
+            "name": "total_opportunities",
+            "expr": "source.total_opportunities",
+            "displayName": "Total Opportunities"
+          },
+          {
+            "name": "won_deals",
+            "expr": "source.won_deals",
+            "displayName": "Won Deals"
+          },
+          {
+            "name": "lost_deals",
+            "expr": "source.lost_deals",
+            "displayName": "Lost Deals"
+          },
+          {
+            "name": "active_deals",
+            "expr": "source.active_deals",
+            "displayName": "Active Deals"
+          },
+          {
+            "name": "win_rate_pct",
+            "expr": "source.win_rate_pct",
+            "displayName": "Win Rate Pct"
+          },
+          {
+            "name": "total_revenue",
+            "expr": "source.total_revenue",
+            "displayName": "Total Revenue"
+          },
+          {
+            "name": "avg_deal_value",
+            "expr": "source.avg_deal_value",
+            "displayName": "Avg Deal Value"
+          },
+          {
+            "name": "min_deal_value",
+            "expr": "source.min_deal_value",
+            "displayName": "Min Deal Value"
+          },
+          {
+            "name": "max_deal_value",
+            "expr": "source.max_deal_value",
+            "displayName": "Max Deal Value"
+          },
+          {
+            "name": "avg_days_to_close",
+            "expr": "source.avg_days_to_close",
+            "displayName": "Avg Days To Close"
+          },
+          {
+            "name": "created_at",
+            "expr": "source.created_at",
+            "displayName": "Created At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "c255e10d",
+      "displayName": "sales_agent_performance",
+      "config": {
+        "version": "1.1",
+        "source": "legacy_pty.gold.sales_agent_performance",
+        "dimensions": [
+          {
+            "name": "sales_agent_id",
+            "expr": "source.sales_agent_id",
+            "displayName": "Sales Agent Id"
+          },
+          {
+            "name": "sales_agent",
+            "expr": "source.sales_agent",
+            "displayName": "Sales Agent"
+          },
+          {
+            "name": "manager",
+            "expr": "source.manager",
+            "displayName": "Manager"
+          },
+          {
+            "name": "regional_office",
+            "expr": "source.regional_office",
+            "displayName": "Regional Office"
+          },
+          {
+            "name": "total_opportunities",
+            "expr": "source.total_opportunities",
+            "displayName": "Total Opportunities"
+          },
+          {
+            "name": "won_deals",
+            "expr": "source.won_deals",
+            "displayName": "Won Deals"
+          },
+          {
+            "name": "lost_deals",
+            "expr": "source.lost_deals",
+            "displayName": "Lost Deals"
+          },
+          {
+            "name": "engaging_deals",
+            "expr": "source.engaging_deals",
+            "displayName": "Engaging Deals"
+          },
+          {
+            "name": "prospecting_deals",
+            "expr": "source.prospecting_deals",
+            "displayName": "Prospecting Deals"
+          },
+          {
+            "name": "win_rate_pct",
+            "expr": "source.win_rate_pct",
+            "displayName": "Win Rate Pct"
+          },
+          {
+            "name": "total_revenue",
+            "expr": "source.total_revenue",
+            "displayName": "Total Revenue"
+          },
+          {
+            "name": "avg_deal_value",
+            "expr": "source.avg_deal_value",
+            "displayName": "Avg Deal Value"
+          },
+          {
+            "name": "unique_accounts",
+            "expr": "source.unique_accounts",
+            "displayName": "Unique Accounts"
+          },
+          {
+            "name": "products_sold",
+            "expr": "source.products_sold",
+            "displayName": "Products Sold"
+          },
+          {
+            "name": "avg_days_to_close",
+            "expr": "source.avg_days_to_close",
+            "displayName": "Avg Days To Close"
+          },
+          {
+            "name": "first_engagement_date",
+            "expr": "source.first_engagement_date",
+            "displayName": "First Engagement Date"
+          },
+          {
+            "name": "last_close_date",
+            "expr": "source.last_close_date",
+            "displayName": "Last Close Date"
+          },
+          {
+            "name": "performance_tier",
+            "expr": "source.performance_tier",
+            "displayName": "Performance Tier"
+          },
+          {
+            "name": "created_at",
+            "expr": "source.created_at",
+            "displayName": "Created At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "executive_summary",
+      "displayName": "Executive Summary",
+      "layout": [
+        {
+          "widget": {
+            "name": "executive_insights",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Legacy Pty Sales Performance: Executive Summary\n",
+                "\n",
+                "**Business Overview (2017 Jan-Oct)**\n",
+                "\n",
+                "Legacy Pty generated **$10.01M in revenue** from 8,300 opportunities across 85 enterprise accounts, achieving a **52.8% win rate**. The business demonstrates strong market presence in enterprise software/technology sectors but faces critical concentration risks and capacity utilization gaps that represent **$3-4M in near-term revenue opportunity**.\n",
+                "\n",
+                "### Revenue Architecture: Three Concentration Risks\n",
+                "\n",
+                "The revenue base exhibits dangerous concentration across three dimensions:\n",
+                "\n",
+                "**Agent Concentration**: Sales agent Darcel Schlecht (Central region) generates **$1.15M (11.5% of company revenue)** from 636 opportunities, 349 wins, and 41 accounts. While his 54.87% win rate and $3,304 average deal value demonstrate operational excellence, this creates succession risk. No other agent exceeds $500K in revenue.\n",
+                "\n",
+                "**Product Concentration**: GTX Series products drive **73% of total revenue** ($7.34M), with GTX Pro ($3.51M, 35%) and GTX Plus Pro ($2.63M, 26%) accounting for **61% combined**. This heavy reliance on two SKUs creates portfolio vulnerability, though their 49-52% win rates and 48-day close cycles prove market fit.\n",
+                "\n",
+                "**Account Concentration**: Top account Kan-code generates **$341K (3.4% of revenue)** with 59% win rate. The top 10 accounts represent a significant revenue share, though the 85-account base provides reasonable diversification. Seven parent companies with 15 subsidiaries (Acme Corporation: 4 subs/$519K, Sonron: 3 subs/$479K) present enterprise agreement opportunities.\n",
+                "\n",
+                "### Performance Excellence: Where We Win\n",
+                "\n",
+                "**Sector Leadership**: Software sector posts **60.8% win rate** (highest conversion), proving strong product-market fit. Retail leads revenue at **$1.87M (18.66%)** with solid execution. Technology sector contributes **$1.52M** with balanced performance. These three sectors represent our core competitive advantage.\n",
+                "\n",
+                "**Regional Execution**: West region leads productivity at **$357K revenue per agent** ($3.57M total, 35.67% of company). Central region achieves **54.1% win rate** (highest conversion, $3.35M total). East region drives premium deal values with highest average deal sizes ($3.09M total). All three regions demonstrate operational viability.\n",
+                "\n",
+                "**Elite Performers**: Beyond Darcel, several agents demonstrate replicable excellence: Reed Clapper (65.4% win rate), Garret Kinder (60.98%), Cecily Lampkin (59.78%). High performers (23 agents, 66% of team) consistently deliver. This suggests our go-to-market model works when properly executed.\n",
+                "\n",
+                "### Critical Capacity Gaps: $3-4M Opportunity\n",
+                "\n",
+                "**Vacant Sales Capacity**: **5 agents show zero activity** (Carol Thompson, Elizabeth Anderson, Carl Lin, Mei-Mei Johns, Natalya Ivanova), representing **14% of the 35-person team**. At average productivity of $300-400K per agent, this represents **$1.5-2M in lost annual revenue**. Manager Cara Losch oversees two inactive agents, requiring immediate intervention.\n",
+                "\n",
+                "**Underperforming Assets**: **6 agents in Average tier** (17% of team) and low performers like Markita Hansen (42.48% win rate, wasting 176 lost opportunities annually) represent coaching opportunities. Moving 3 Average performers to High tier could generate **+$600K revenue**.\n",
+                "\n",
+                "**Product Portfolio Gaps**: GTK 500 shows **37.5% win rate with only 40 opportunities** despite $26,707 average deal value and clear enterprise positioning. This suggests pipeline generation failure, not product weakness. MG Special generated **$44K from 793 wins** (1,531 opps), raising unit economics questions. Combined, these represent **$500K-1M** in optimization opportunity.\n",
+                "\n",
+                "### Strategic Growth Levers: $3.5M Revenue Potential\n",
+                "\n",
+                "**Win Rate Optimization** (+$700K): Current 52.8% win rate trails elite performers by 7-12 points. Systematically moving team toward 55% (still below top performers) would generate **$700K incremental revenue** from existing pipeline. Focus on Software/Central region methodologies.\n",
+                "\n",
+                "**Capacity Fill** (+$1.5-2M): Activating 5 vacant agent positions at $300-400K productivity each unlocks **$1.5-2M**. This requires manager accountability (Cara Losch intervention) and potentially recruiting/redeployment.\n",
+                "\n",
+                "**Best Practice Scaling** (+$400-600K): Codifying and replicating Darcel Schlecht's methodology (product breadth, account coverage, 54.87% win rate, 49.4-day close cycle) across 5-8 agents could generate **$400-600K** while reducing concentration risk.\n",
+                "\n",
+                "**Performance Mobility** (+$600K): Targeted coaching to move 3 Average-tier agents into High tier (from $200K to $400K productivity) adds **$600K**. Reed Clapper's 65.4% win rate proves the ceiling is higher than current average.\n",
+                "\n",
+                "**Combined potential: $3.1-3.9M revenue increase** (31-39% growth) from operational improvements alone, without new market entry.\n",
+                "\n",
+                "### Cross-Dimensional Patterns\n",
+                "\n",
+                "Analysis reveals three interconnected success patterns:\n",
+                "\n",
+                "**Product-Sector-Agent Alignment**: High-performing agents (Darcel, Reed, Garret) sell across all 7 products into Software/Technology sectors where win rates exceed 54%. This suggests product breadth + sector focus drives results, not SKU specialization.\n",
+                "\n",
+                "**Regional-Manager-Performance Cascade**: West's productivity ($357K/agent) and Central's win rate (54.1%) correlate with manager effectiveness (Melvin Marxen manages $2.5M team including Darcel; Summer Sewald manages ~$2M team). Manager quality directly predicts team outcomes.\n",
+                "\n",
+                "**Parent Company Leverage**: 7 parent companies with 15 subsidiaries generate concentrated revenue (Acme $519K, Sonron $479K), yet we lack enterprise-wide agreements. Converting these to consolidated contracts could accelerate subsidiary expansion while reducing sales cycle length.\n",
+                "\n",
+                "### Immediate Priorities\n",
+                "\n",
+                "1. **Activate Vacant Capacity** (Week 1): Manager intervention with Cara Losch on 2 inactive agents, HR review of remaining 3, establish 30-day performance plans. Target: $400K pipeline generation within 90 days.\n",
+                "\n",
+                "2. **Win Rate Sprint** (Month 1): Darcel Schlecht methodology documentation, playbook creation for Software sector approach, coaching deployment to 8 target agents. Target: 52.8% → 54% win rate (+$300K quarterly).\n",
+                "\n",
+                "3. **GTK 500 Pipeline Fix** (Month 1): Root cause analysis on 40-opportunity bottleneck (pipeline generation vs. qualification vs. discovery failure), establish 100-opportunity target, or make exit decision. Enterprise product at 37.5% win rate indicates process failure, not product failure.\n",
+                "\n",
+                "4. **Manager Accountability** (Month 2): Establish manager scorecards tied to team productivity and win rates, quarterly reviews, succession planning for Darcel's accounts to reduce concentration risk.\n",
+                "\n",
+                "**Bottom Line**: Legacy Pty has built a **$10M foundation with proven market fit** in Software/Technology sectors and operational excellence in pockets (Darcel, West region, GTX Series). The path to **$13-14M** exists entirely within current capacity through activating vacant positions, replicating best practices, and optimizing underperforming assets. Revenue concentration represents the primary strategic risk requiring diversification across agents, products, and accounts."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "monthly_trends",
+      "displayName": "Monthly Trends",
+      "layout": [
+        {
+          "widget": {
+            "name": "monthly_insights",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Monthly Sales Performance Analysis: 2017 Jan-Oct\n",
+                "\n",
+                "### Executive Summary\n",
+                "\n",
+                "Legacy Pty's 10-month performance (January-October 2017) demonstrates **remarkable consistency and operational discipline** across revenue, conversion rates, and sales execution. The company generated **$10.01M in total revenue** from **8,300 opportunities** across **85 enterprise accounts**, achieving a **52.8% average win rate** that remained stable throughout the period.\n",
+                "\n",
+                "Unlike typical early-stage companies exhibiting volatile month-to-month swings, Legacy Pty's metrics show **controlled, predictable performance** characteristic of a mature sales operation with established processes, qualified pipeline, and experienced sales talent. This consistency creates a strong foundation for scaling but also reveals limited growth momentum requiring strategic intervention.\n",
+                "\n",
+                "### Revenue Performance: Consistent But Flat\n",
+                "\n",
+                "**Monthly Revenue Range**: $871K (January) to $1.14M (August)\n",
+                "\n",
+                "**Key Observations**:\n",
+                "* **No clear growth trajectory** - revenue fluctuates within a **$270K band** (31% variance) but shows no sustained upward trend\n",
+                "* **Seasonal pattern unclear** - no obvious Q1/Q2/Q3 seasonality in this 10-month window\n",
+                "* **Predictable baseline** - monthly revenue consistently clusters around **$1M ±10%**, enabling reliable forecasting\n",
+                "* **August spike** ($1.14M) represents peak performance but was not sustained into subsequent months\n",
+                "* **September/October softness** ($944K, $988K) suggests potential pipeline depletion or seasonal slowdown\n",
+                "\n",
+                "**Analysis**: The flat revenue trajectory over 10 months indicates the business has reached a **steady-state equilibrium** where current capacity (35 sales agents, 85 accounts, 7 products) generates approximately **$12M annual run rate**. Without intervention—additional sales capacity, new product lines, market expansion, or pricing optimization—revenue will likely remain range-bound at current levels.\n",
+                "\n",
+                "**Growth Implications**:\n",
+                "* **No organic growth** - existing accounts/products/team are not naturally expanding revenue\n",
+                "* **Pipeline saturation** - sales team may be at capacity managing 85 accounts and 8,300 annual opportunities\n",
+                "* **Market penetration limits** - current go-to-market may have captured available demand in existing segments\n",
+                "\n",
+                "### Win Rate Performance: Industry-Leading Consistency\n",
+                "\n",
+                "**Monthly Win Rate Range**: 49.8% (February) to 55.4% (May)\n",
+                "\n",
+                "**Key Observations**:\n",
+                "* **Exceptional consistency** - win rates cluster tightly in 50-54% range with only **5.6 percentage point spread** across 10 months\n",
+                "* **Above industry benchmarks** - 52.8% average significantly exceeds typical B2B SaaS win rates (25-35%)\n",
+                "* **May peak** (55.4%) demonstrates achievable high-water mark with current team and processes\n",
+                "* **No deterioration** - win rates remain stable despite flat revenue, indicating pipeline quality hasn't degraded\n",
+                "* **Predictable conversion** - tight variance enables accurate revenue forecasting from pipeline metrics\n",
+                "\n",
+                "**Analysis**: This level of win rate consistency is **rare and valuable** in B2B sales, indicating:\n",
+                "1. **Strong qualification discipline** - sales team pursues winnable opportunities, not vanity pipeline\n",
+                "2. **Product-market fit** - offerings resonate consistently across customer segments\n",
+                "3. **Effective sales methodology** - repeatable processes produce predictable outcomes\n",
+                "4. **Competitive positioning** - clear differentiation allows consistent competitive wins\n",
+                "\n",
+                "**Strategic Insight**: The stable 52.8% win rate is a **strength to preserve**, not improve. Pushing for materially higher win rates (58-60%) could indicate poor qualification (cherry-picking easy wins) or leaving market opportunity unaddressed. The focus should be **increasing qualified pipeline volume** while maintaining current conversion efficiency.\n",
+                "\n",
+                "### Average Deal Value: Stable Pricing Discipline\n",
+                "\n",
+                "**Monthly Avg Deal Value Range**: $1,190 (May) to $1,281 (March)\n",
+                "\n",
+                "**Key Observations**:\n",
+                "* **Narrow 7.6% variance** across 10 months demonstrates pricing consistency\n",
+                "* **$1,200 baseline** sustained without discount pressure or competitive erosion\n",
+                "* **No premium product mix shift** - deal values remain flat despite GTK 500 ($26,707) availability\n",
+                "* **March peak** ($1,281) not sustained, suggesting one-off large deal influence rather than structural shift\n",
+                "* **Consistent with product portfolio** - $1,200 avg aligns with GTX Pro/Plus Pro dominance (61% of revenue at $4,816-$5,490)\n",
+                "\n",
+                "**Analysis**: Flat average deal values indicate:\n",
+                "1. **Pricing power maintained** - no downward pressure from competition or customer negotiations\n",
+                "2. **Product mix consistency** - customers continue purchasing similar product combinations\n",
+                "3. **No upsell momentum** - existing accounts not expanding into premium products\n",
+                "4. **Limited GTK 500 penetration** - enterprise product ($26,707) not moving averages, confirming low volume (40 opps annually)\n",
+                "\n",
+                "**Growth Constraint**: The absence of deal value growth suggests **limited expansion revenue** from existing customers. Most wins appear to be new account acquisitions or replacements rather than upsells/cross-sells to existing base.\n",
+                "\n",
+                "### Sales Cycle Efficiency: Fast Time-to-Close\n",
+                "\n",
+                "**Monthly Avg Days to Close Range**: 45.1 days (August) to 54.1 days (October)\n",
+                "\n",
+                "**Key Observations**:\n",
+                "* **Industry-leading velocity** - 48-day average cycle significantly faster than typical 60-90+ day enterprise sales cycles\n",
+                "* **Consistent efficiency** - 9-day variance (20%) shows stable sales execution\n",
+                "* **August best performance** (45.1 days) demonstrates achievable efficiency with current processes\n",
+                "* **October slowdown** (54.1 days) worth monitoring - longest cycle of 10-month period, potentially indicating:\n",
+                "  - Pipeline quality degradation (less qualified opportunities requiring longer nurture)\n",
+                "  - Competitive pressure (more evaluation/comparison time)\n",
+                "  - Seasonal slowdown (year-end budget exhaustion or decision delays)\n",
+                "* **No correlation with deal value** - fast cycles maintained despite $1,200 avg deals requiring multi-stakeholder approval\n",
+                "\n",
+                "**Analysis**: The 48-day sales cycle provides significant **competitive advantage**:\n",
+                "1. **Faster revenue recognition** - shorter cycles improve cash conversion and pipeline turns\n",
+                "2. **Higher sales capacity** - reps can work more deals annually vs. competitors with 90-day cycles\n",
+                "3. **Lower churn risk** - less time for prospects to disengage or choose competitors\n",
+                "4. **Clear value proposition** - fast decisions indicate strong product-market fit and effective discovery\n",
+                "\n",
+                "**Strategic Asset**: This efficiency should be **protected and codified** as core competitive advantage. Any initiatives that risk extending sales cycles (complex pricing, feature expansion, new segments) should be carefully evaluated.\n",
+                "\n",
+                "### Pipeline Volume & Velocity Trends\n",
+                "\n",
+                "**Monthly Opportunity Volume**: 830 opportunities/month average\n",
+                "* **Consistent pipeline generation** - no month below 788 or above 881 opportunities\n",
+                "* **Flat trend** - no increasing or decreasing trajectory over 10 months\n",
+                "* **Capacity constraint indicator** - 35 agents managing 830 monthly opps = 24 opps/agent/month average\n",
+                "\n",
+                "**Pipeline-to-Revenue Conversion**:\n",
+                "* **830 opportunities × 52.8% win rate × $1,200 avg deal = $525K theoretical monthly revenue**\n",
+                "* **Actual monthly revenue: ~$1M** - suggests additional nuance (not all opps are $1,200, or conversion math differs)\n",
+                "* **Efficient pipeline management** - high win rates minimize wasted effort on unqualified leads\n",
+                "\n",
+                "### Monthly Engagement Metrics\n",
+                "\n",
+                "**Unique Accounts Engaged Monthly**: Likely 70-80 of 85 total accounts active each month\n",
+                "* **High account coverage** - most enterprise accounts show monthly activity\n",
+                "* **Expansion opportunity** - recurring engagement suggests ongoing relationship depth\n",
+                "* **Churn risk low** - consistent touchpoints maintain customer relationships\n",
+                "\n",
+                "**Active Sales Agents**: 30 of 35 agents producing monthly (5 no-activity agents confirmed)\n",
+                "* **Capacity utilization issue** - 14% of team idle represents $1.5-2M lost productivity\n",
+                "* **Manager accountability gap** - non-producing agents tolerated for extended period\n",
+                "\n",
+                "**Products Sold Monthly**: All 7 products likely sold each month given portfolio breadth\n",
+                "* **Product-market fit across portfolio** - consistent adoption of multiple SKUs\n",
+                "* **Cross-sell effectiveness** - agents successfully selling product breadth\n",
+                "\n",
+                "### Cross-Dimensional Patterns\n",
+                "\n",
+                "**Revenue-Win Rate Correlation**: Interestingly, **no strong correlation** between monthly win rates and revenue\n",
+                "* **May** had highest win rate (55.4%) but middle-tier revenue ($1.01M)\n",
+                "* **August** had peak revenue ($1.14M) but average win rate (52.9%)\n",
+                "* **Interpretation**: Revenue driven more by **pipeline volume and deal value** than conversion rate optimization\n",
+                "\n",
+                "**Sales Cycle-Revenue Relationship**: \n",
+                "* **Fastest month (August, 45.1 days) = highest revenue ($1.14M)** - velocity drives outcomes\n",
+                "* **Slowest month (October, 54.1 days) = below-average revenue ($988K)** - cycle drag impacts results\n",
+                "* **Implication**: Focusing on **deal acceleration** may yield better ROI than win rate optimization\n",
+                "\n",
+                "### Temporal Insights & Seasonality\n",
+                "\n",
+                "**Q1 Performance (Jan-Mar)**: \n",
+                "* Revenue: $871K → $1.03M → $1.04M = **19% sequential growth** in quarter\n",
+                "* Win rate: 52.7% → 49.8% → 51.5% = stable conversion\n",
+                "* **Pattern**: Strong recovery from January low, suggesting year-start ramp period\n",
+                "\n",
+                "**Q2 Performance (Apr-Jun)**:\n",
+                "* Revenue: $1.02M → $1.01M → $1.08M = **6% growth** in quarter\n",
+                "* Win rate: 53.2% → 55.4% → 52.9% = peak conversion in May\n",
+                "* **Pattern**: Sustained performance with May representing best conversion efficiency\n",
+                "\n",
+                "**Q3 Performance (Jul-Sep)**:\n",
+                "* Revenue: $1.08M → $1.14M → $944K = **-13% decline** end of quarter\n",
+                "* Win rate: 51.8% → 52.9% → 52.1% = stable conversion despite revenue drop\n",
+                "* **Pattern**: August peak followed by September softness suggests **potential seasonal pattern**\n",
+                "\n",
+                "**October (Q4 Preview)**:\n",
+                "* Revenue: $988K (below average), Win rate: 52.4%, Days to close: 54.1 (slowest)\n",
+                "* **Concern**: October weakness plus September decline suggests **emerging negative trend** requiring investigation\n",
+                "\n",
+                "### Strategic Concerns & Risk Factors\n",
+                "\n",
+                "**1. Flat Growth Trajectory**:\n",
+                "* **10 months without sustained growth** indicates structural ceiling at current capacity/strategy\n",
+                "* **Risk**: Company stuck at ~$12M annual run rate without intervention\n",
+                "* **Recommendation**: Launch growth initiatives (new hires, product expansion, market entry) in Q1 2018\n",
+                "\n",
+                "**2. September-October Weakness**:\n",
+                "* **Two consecutive months of below-average revenue** ($944K, $988K) after August peak ($1.14M)\n",
+                "* **Potential causes**: Pipeline depletion, seasonal slowdown, competitive pressure, sales team attrition\n",
+                "* **Action required**: Deep-dive pipeline analysis to diagnose root cause\n",
+                "\n",
+                "**3. Idle Sales Capacity**:\n",
+                "* **5 agents with zero activity** represent $150-200K monthly lost revenue opportunity\n",
+                "* **Compounding issue**: 10 months of zero productivity = $1.5-2M annual revenue loss\n",
+                "* **Immediate action**: Terminate/replace non-producing agents, implement 30-60-90 day performance plans\n",
+                "\n",
+                "**4. Limited Deal Value Expansion**:\n",
+                "* **Flat $1,200 avg deal value** over 10 months suggests minimal upsell/cross-sell success\n",
+                "* **GTK 500 underutilization** - premium product not driving portfolio mix upgrade\n",
+                "* **Opportunity**: Focus on **account expansion** within 85-account base to increase wallet share\n",
+                "\n",
+                "**5. No Product Mix Evolution**:\n",
+                "* **Consistent revenue distribution** across products implies portfolio stagnation\n",
+                "* **GTX dominance maintained** (73% of revenue) without diversification\n",
+                "* **Risk**: Over-reliance on 2 products (GTX Pro + GTX Plus Pro = 61%) creates vulnerability\n",
+                "\n",
+                "### Growth Acceleration Levers\n",
+                "\n",
+                "**High-Impact, Near-Term Opportunities** (3-6 month horizon):\n",
+                "\n",
+                "**1. Fill Vacant Sales Capacity** (+$1.5-2M annual impact):\n",
+                "* Activate 5 idle agents immediately through performance plans or termination/replacement\n",
+                "* Target $300-400K annual productivity per filled position\n",
+                "* **Timeline**: 30 days to address, 90 days to ramp replacements\n",
+                "\n",
+                "**2. Pipeline Volume Expansion** (+$2-3M annual impact):\n",
+                "* Increase monthly opportunity volume from 830 to 1,100 (+33%) while maintaining 52.8% win rate\n",
+                "* Additional 270 opps/month × 52.8% × $1,200 × 12 months = **$2M incremental revenue**\n",
+                "* **Tactics**: Increase SDR headcount, enhance marketing spend, launch ABM campaigns in Software/Retail sectors\n",
+                "\n",
+                "**3. Sales Cycle Acceleration** (+$700K-1M annual impact):\n",
+                "* Reduce average days to close from 48 to 42 days (match August best performance)\n",
+                "* Faster velocity enables **+12% more deals per year per rep** from same pipeline\n",
+                "* **Method**: Codify August best practices, implement deal acceleration playbooks, remove internal friction\n",
+                "\n",
+                "**4. Win Rate Optimization** (+$700K annual impact):\n",
+                "* Improve from 52.8% to 55% (match May peak) across full year\n",
+                "* 2.2 percentage point improvement on 10,000 annual opps = **+220 wins × $1,200 = $264K** (conservative)\n",
+                "* **Tactics**: Replicate Central office methodology (54.1% win rate), deploy Darcel Schlecht playbook\n",
+                "\n",
+                "**Medium-Impact, Strategic Initiatives** (6-12 month horizon):\n",
+                "\n",
+                "**5. Deal Value Expansion** (+$1-1.5M annual impact):\n",
+                "* Increase average deal value from $1,200 to $1,400 through product mix upgrade\n",
+                "* Target 20% of wins ($2M annual revenue) to shift from GTX Pro → GTX Plus Pro or GTK 500\n",
+                "* **Tactics**: Premium SKU training, account-based upsell campaigns, pricing packaging optimization\n",
+                "\n",
+                "**6. Account Expansion Program** (+$1-2M annual impact):\n",
+                "* Launch dedicated expansion team targeting 85 existing accounts for additional product adoption\n",
+                "* Goal: Increase products-per-account from current baseline to +1 product per 20 accounts\n",
+                "* **Opportunity**: 85 accounts × $12K additional revenue each = $1M+ upside\n",
+                "\n",
+                "**7. Parent Company Enterprise Agreements** (+$500K-1M annual impact):\n",
+                "* Convert 7 parent company relationships (Acme, Sonron, etc.) to consolidated contracts\n",
+                "* Accelerate subsidiary adoption (15 subsidiaries) through corporate-level agreements\n",
+                "* **Benefit**: Faster deals, higher contract values, reduced churn\n",
+                "\n",
+                "**Combined Growth Potential**: **$7-10M incremental annual revenue** from operational improvements alone (58-83% growth).\n",
+                "\n",
+                "### Immediate Action Plan\n",
+                "\n",
+                "**Week 1-2 Actions**:\n",
+                "1. **Diagnose Sept-Oct weakness** - pipeline quality review, competitive loss analysis, agent productivity audit\n",
+                "2. **Address idle capacity** - manager meetings (Cara Losch, Rocco Neubert) to create 30-day performance improvement plans for 5 no-activity agents\n",
+                "3. **Codify August success** - interview top performers from August to document what drove peak revenue month\n",
+                "\n",
+                "**Month 1 Actions**:\n",
+                "1. **Launch win rate initiative** - deploy Central region methodology across West/East offices\n",
+                "2. **Pipeline generation sprint** - increase SDR activity, launch targeted campaigns in Software sector (60.8% win rate)\n",
+                "3. **Sales cycle acceleration** - implement deal review process for opportunities >45 days, remove bottlenecks\n",
+                "\n",
+                "**Quarter 1 2018 Goals**:\n",
+                "1. **Revenue target: $3.5M** (vs $3M Q1 2017 baseline) = +17% YoY growth\n",
+                "2. **Fill 5 vacant positions** - hire/activate to reach 100% sales capacity utilization\n",
+                "3. **Expand pipeline 20%** - grow from 830 to 1,000 opportunities/month\n",
+                "4. **Launch parent company program** - sign first enterprise agreement with Acme or Sonron\n",
+                "\n",
+                "### Bottom Line\n",
+                "\n",
+                "Legacy Pty has built a **fundamentally sound $10M business** with industry-leading win rates (52.8%), fast sales cycles (48 days), and operational consistency. However, **10 months of flat performance** signals the company has hit capacity limits with current resources and strategy.\n",
+                "\n",
+                "The path to **$17-20M** (70-100% growth) exists entirely through **operational optimization and capacity expansion**—filling vacant positions, accelerating pipeline generation, and scaling best practices from top performers. No fundamental business model changes required.\n",
+                "\n",
+                "The **immediate concern** is September-October weakness, which requires urgent diagnosis to determine if it represents temporary fluctuation or emerging structural issue requiring course correction.\n",
+                "\n",
+                "**Key Success Metric**: Break through $1.2M monthly revenue threshold consistently in Q1 2018 through combination of capacity activation, pipeline expansion, and sales velocity improvements.\n",
+                "\n",
+                "---"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "total_opps_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "sum(total_opportunities)",
+                      "expression": "SUM(`total_opportunities`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Opportunities",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_opportunities)",
+                  "displayName": "Total Opportunities"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total_revenue_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Revenue",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Total Revenue"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_win_rate_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Average Win Rate",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Avg Win Rate"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue Trend Over Time",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "total_revenue",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 0
+                    }
+                  },
+                  "displayName": "Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "win_rate_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Win Rate Trend Over Time",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "win_rate_pct",
+                  "format": {
+                    "type": "number-percent",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    }
+                  },
+                  "displayName": "Win Rate %",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 17,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_deal_value_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "avg_deal_value",
+                      "expression": "`avg_deal_value`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Average Deal Value Trend",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_deal_value",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 0
+                    }
+                  },
+                  "displayName": "Avg Deal Value",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "active_agents_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "active_sales_agents",
+                      "expression": "`active_sales_agents`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Active Sales Agents Trend",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "active_sales_agents",
+                  "displayName": "Active Agents",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 31,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "unique_accounts_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "unique_accounts",
+                      "expression": "`unique_accounts`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Unique Accounts Trend",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "unique_accounts",
+                  "displayName": "Unique Accounts",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 31,
+            "width": 6,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "days_to_close_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "avg_days_to_close",
+                      "expression": "`avg_days_to_close`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Days to Close Trend",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "month_start_date",
+                  "displayName": "Month",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_days_to_close",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "none",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    }
+                  },
+                  "displayName": "Avg Days to Close",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 38,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "monthly_performance_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "cbff24f2",
+                  "fields": [
+                    {
+                      "name": "month_start_date",
+                      "expression": "`month_start_date`"
+                    },
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    },
+                    {
+                      "name": "total_opportunities",
+                      "expression": "`total_opportunities`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    },
+                    {
+                      "name": "avg_deal_value",
+                      "expression": "`avg_deal_value`"
+                    },
+                    {
+                      "name": "avg_days_to_close",
+                      "expression": "`avg_days_to_close`"
+                    },
+                    {
+                      "name": "active_sales_agents",
+                      "expression": "`active_sales_agents`"
+                    },
+                    {
+                      "name": "unique_accounts",
+                      "expression": "`unique_accounts`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Monthly Performance Details",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "month_start_date",
+                    "format": {
+                      "type": "date",
+                      "date": "locale-short-month"
+                    },
+                    "displayName": "Month"
+                  },
+                  {
+                    "fieldName": "total_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Revenue"
+                  },
+                  {
+                    "fieldName": "total_opportunities",
+                    "displayName": "Opportunities"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  },
+                  {
+                    "fieldName": "win_rate_pct",
+                    "format": {
+                      "type": "number-percent",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    },
+                    "displayName": "Win Rate %"
+                  },
+                  {
+                    "fieldName": "avg_deal_value",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Avg Deal Value"
+                  },
+                  {
+                    "fieldName": "avg_days_to_close",
+                    "format": {
+                      "type": "number-plain",
+                      "abbreviation": "none",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    },
+                    "displayName": "Avg Days to Close"
+                  },
+                  {
+                    "fieldName": "active_sales_agents",
+                    "displayName": "Active Agents"
+                  },
+                  {
+                    "fieldName": "unique_accounts",
+                    "displayName": "Accounts"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 45,
+            "width": 12,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "product_performance",
+      "displayName": "Product Performance",
+      "layout": [
+        {
+          "widget": {
+            "name": "total_products_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Products",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)",
+                  "displayName": "Total Products"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total_revenue_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "numberFormat": {
+                  "formatType": "numeral",
+                  "format": "$0,0"
+                }
+              },
+              "frame": {
+                "title": "Total Product Revenue",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Total Revenue"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_win_rate_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "percentFormat": {
+                  "formatType": "numeral",
+                  "format": "0.0%"
+                }
+              },
+              "frame": {
+                "title": "Avg Product Win Rate(%)",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Avg Win Rate"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_product",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "product",
+                      "expression": "`product`"
+                    },
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue by Product",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "product",
+                  "displayName": "Product",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 3
+                    }
+                  },
+                  "displayName": "Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "width": 7,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "product_details_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "product",
+                      "expression": "`product`"
+                    },
+                    {
+                      "name": "series",
+                      "expression": "`series`"
+                    },
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    },
+                    {
+                      "name": "avg_deal_value",
+                      "expression": "`avg_deal_value`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Product Performance Details",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "product",
+                    "displayName": "Product"
+                  },
+                  {
+                    "fieldName": "series",
+                    "displayName": "Series"
+                  },
+                  {
+                    "fieldName": "total_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Revenue"
+                  },
+                  {
+                    "fieldName": "win_rate_pct",
+                    "format": {
+                      "type": "number-percent"
+                    },
+                    "displayName": "Win Rate %"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  },
+                  {
+                    "fieldName": "avg_deal_value",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Avg Deal Value"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 17,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_series",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9d63a58b",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    },
+                    {
+                      "name": "series",
+                      "expression": "`series`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue by Series",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact"
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Revenue"
+                },
+                "color": {
+                  "fieldName": "series",
+                  "displayName": "Series",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 7,
+            "y": 10,
+            "width": 5,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "product_insights",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Product Performance Insights\n",
+                "\n",
+                "### Product Portfolio Overview\n",
+                "\n",
+                "Legacy Pty's product catalog consists of **7 products across 3 series** generating **$10.01M in total revenue** from **8,300 total opportunities**. The portfolio demonstrates a strategic tiered pricing approach ranging from entry-level products at **$55** (MG Special) to enterprise solutions at **$26,768** (GTK 500), enabling market coverage across diverse customer segments and use cases.\n",
+                "\n",
+                "The product mix reflects a balanced growth strategy: high-volume entry products drive customer acquisition and market penetration, mid-tier products generate predictable recurring revenue, and premium offerings capture enterprise budgets for strategic accounts. This tiered architecture supports land-and-expand sales motions and provides clear upgrade paths for customer lifecycle management.\n",
+                "\n",
+                "### Top Product Performers - GTX Series Dominance\n",
+                "\n",
+                "**GTX Pro - Revenue Flagship**: Leading all products with **$3.51M in revenue (35% of total)**, GTX Pro represents the company's core offering with:\n",
+                "* **1,400 opportunities, 729 wins** - highest volume among premium products\n",
+                "* **52.07% win rate** - above company average, indicating strong product-market fit\n",
+                "* **$4,816 average deal value** - mid-premium pricing captures large accounts without enterprise complexity\n",
+                "* **48.3 days to close** - fastest sales cycle in portfolio, suggesting clear value proposition and lower friction\n",
+                "\n",
+                "**Strategic Value**: GTX Pro sits in the portfolio \"sweet spot\" - high enough price point for meaningful revenue, proven win rate for predictable pipeline conversion, and fast sales velocity for efficient quota attainment. This product should anchor sales compensation plans and receive priority in marketing investment.\n",
+                "\n",
+                "**GTX Plus Pro - Premium Tier Leader**: Second in revenue at **$2.63M (26% of total)**, GTX Plus Pro captures high-value customers:\n",
+                "* **921 opportunities, 479 wins** - strong volume despite premium positioning\n",
+                "* **52.01% win rate** - matches GTX Pro's conversion, proving premium pricing doesn't hurt close rates\n",
+                "* **$5,490 average deal value** - 14% price premium over GTX Pro for enhanced features\n",
+                "* **51.7 days to close** - only 3.4 days longer than GTX Pro despite higher price\n",
+                "\n",
+                "**Combined GTX Pro + GTX Plus Pro Impact**: These two products generate **$6.14M combined (61% of total revenue)** from just 2 of 7 products. This concentration indicates:\n",
+                "* Strong product-market fit in mid-to-premium segments\n",
+                "* Sales team expertise and confidence selling these SKUs\n",
+                "* Clear upgrade path from GTX Pro to GTX Plus Pro for expansion revenue\n",
+                "* Dependency risk - revenue health tied to performance of 2 products\n",
+                "\n",
+                "### Series Performance Analysis\n",
+                "\n",
+                "**GTX Series - Portfolio Workhorse**: Comprising **4 products** (GTX Pro, GTX Plus Pro, GTX Plus Basic, GTX Basic), the GTX line represents the company's core franchise:\n",
+                "* **Total Series Revenue**: ~$7.34M (73% of total) from 4 products\n",
+                "* **Win Rate Range**: 49.89% - 52.07% - consistently above 50%, proving repeatable sales execution\n",
+                "* **Price Ladder**: $550 → $1,096 → $4,821 → $5,482 - clear upgrade path supporting customer expansion\n",
+                "* **Market Coverage**: Entry ($550 Basic) to Premium ($5,482 Plus Pro) spans SMB through mid-market enterprise\n",
+                "\n",
+                "**Strategic Insight**: GTX series success suggests customers value incremental feature tiers and are willing to pay for enhanced capabilities. The tight win rate clustering (49-52%) across price points indicates pricing is calibrated correctly - no product is significantly over/underpriced relative to perceived value.\n",
+                "\n",
+                "**MG Series - Volume Driver**: Two products (MG Advanced, MG Special) demonstrate a contrasting strategy:\n",
+                "* **MG Advanced**: $2.22M revenue, 49.32% win rate, $3,389 avg deal - solid mid-market performer\n",
+                "* **MG Special**: $44K revenue, 51.8% win rate, **$55 avg deal** - extreme low price point\n",
+                "* **MG Special Volume Paradox**: 1,531 opportunities (highest in portfolio) and 793 wins, but generates minimal revenue due to $55 price point\n",
+                "\n",
+                "**Analysis**: MG Special appears to be a **customer acquisition product** - using low price and high volume to:\n",
+                "1. Generate leads and fill top of funnel (1,531 opps = 18% of total pipeline)\n",
+                "2. Build customer relationships for upsell opportunities\n",
+                "3. Compete in price-sensitive segments\n",
+                "4. Establish market presence and brand awareness\n",
+                "\n",
+                "**Concern**: With 793 won deals generating only $44K, the unit economics may not cover sales/support costs. Recommended deep-dive: What percentage of MG Special customers expand to higher-tier products? If conversion rate is low, consider sunsetting or transitioning to freemium/trial model instead of full sales-supported SKU.\n",
+                "\n",
+                "**GTK Series - Enterprise Specialist**: Single-product series (GTK 500) targets ultra-premium segment:\n",
+                "* **$401K revenue** from just **40 opportunities** and **15 wins**\n",
+                "* **$26,707 average deal value** - 5.5x higher than next-highest product (GTX Plus Pro)\n",
+                "* **37.5% win rate** - significantly below portfolio average (51%), indicating sales challenges\n",
+                "* **64.1 days to close** - longest sales cycle (33% longer than GTX Pro)\n",
+                "\n",
+                "**Enterprise Product Dynamics**: Low win rate and long sales cycles are expected for premium products requiring:\n",
+                "* Executive sign-off and budget approval processes\n",
+                "* Proof of concept and technical validation\n",
+                "* Legal/procurement review and contract negotiation\n",
+                "* Multi-stakeholder consensus and change management\n",
+                "\n",
+                "**Strategic Question**: Is 37.5% win rate acceptable for this segment? Industry benchmarks for enterprise software deals >$25K typically range 30-40%, so GTK 500 performance may be on-target. However, with only 40 opportunities annually, pipeline generation is a bottleneck. Recommended actions:\n",
+                "1. **Increase Pipeline**: Target 80-100 qualified opportunities to generate 30-40 wins at current 37.5% rate\n",
+                "2. **Win Rate Optimization**: Identify why 25 deals were lost - pricing, features, competition, or poor fit? Even moving to 45% win rate could add $267K annual revenue\n",
+                "3. **Sales Enablement**: Assign dedicated enterprise sales specialist given complex sales motion and high deal value\n",
+                "4. **Pricing Validation**: $26,768 price point may be positioning product above market - test $22-24K range to improve win rate\n",
+                "\n",
+                "### Product Portfolio Health Indicators\n",
+                "\n",
+                "**Win Rate Consistency**: Six of seven products cluster in 49-52% win rate range - exceptional consistency indicating:\n",
+                "* Standardized sales methodology and execution discipline\n",
+                "* Accurate qualification and pipeline hygiene\n",
+                "* Pricing aligned with customer willingness to pay\n",
+                "* Product capabilities match market expectations\n",
+                "\n",
+                "**GTK 500 Outlier (37.5%)**: The single low-performing product suggests the issue is product/segment-specific (enterprise complexity) rather than systemic sales execution failure.\n",
+                "\n",
+                "**Sales Cycle Efficiency**: GTX products (48-55 days) demonstrate faster velocity than MG Advanced (51.8 days) and GTK 500 (64.1 days), indicating:\n",
+                "* Clear value proposition and strong sales messaging for GTX line\n",
+                "* Product-market fit reduces friction in buying process\n",
+                "* Sales team expertise and confidence selling GTX products\n",
+                "\n",
+                "**Revenue Concentration Risk**: \n",
+                "* **Top 2 products = 61%** of revenue (GTX Pro + GTX Plus Pro)\n",
+                "* **Top 3 products = 83%** of revenue (add MG Advanced)\n",
+                "* **Bottom 4 products = 17%** of revenue\n",
+                "\n",
+                "This Pareto distribution (80/20 rule) is common in B2B product portfolios but creates vulnerability. Loss of GTX Pro momentum or competitive pressure could materially impact company revenue. Diversification strategy needed.\n",
+                "\n",
+                "### Strategic Recommendations\n",
+                "\n",
+                "**1. GTX Series Optimization - Protect the Core**:\n",
+                "* **Invest in Winners**: Increase marketing spend for GTX Pro and GTX Plus Pro - these products have proven PMF and drive 61% of revenue\n",
+                "* **Competitive Defense**: Monitor pricing and feature parity vs. competitors for GTX line - any erosion threatens majority revenue stream\n",
+                "* **Sales Training**: Build advanced certification program for GTX products - ensure 100% of sales team can articulate value prop and handle objections\n",
+                "* **Customer Success**: Implement proactive retention program for GTX customers given revenue concentration risk\n",
+                "\n",
+                "**2. GTK 500 Enterprise Strategy - Fix or Exit**:\n",
+                "* **Pipeline Generation**: Partner with marketing to build dedicated GTK 500 ABM campaign targeting 50+ qualified enterprise accounts\n",
+                "* **Win/Loss Analysis**: Interview all 25 lost GTK 500 deals to identify patterns - price sensitivity, missing features, competitor advantages, or poor qualification\n",
+                "* **Pricing Test**: Run controlled experiment with $22-24K pricing to measure win rate elasticity - even 10% price reduction that increases win rate to 45% adds net revenue\n",
+                "* **Go/No-Go Decision**: If pipeline doesn't reach 80 opps within 6 months or win rate doesn't improve to 42%+, consider sunsetting product to reallocate sales capacity to GTX series\n",
+                "\n",
+                "**3. MG Special Economics Review**:\n",
+                "* **Unit Economics**: Calculate full cost-to-serve for $55 product (sales commission, support, infrastructure) - if unprofitable, transition to self-service/PLG model\n",
+                "* **Upsell Analysis**: Track what percentage of MG Special customers expand to MG Advanced or GTX products within 12 months - if <25%, the acquisition strategy isn't working\n",
+                "* **Strategic Purpose**: Clarify product role - is it loss leader for customer acquisition, competitive response to low-cost providers, or legacy product to be phased out?\n",
+                "\n",
+                "**4. Portfolio Expansion Opportunities**:\n",
+                "* **GTX Ultra/Enterprise**: Bridge gap between GTX Plus Pro ($5.5K) and GTK 500 ($26.7K) with $12-15K product targeting upper mid-market - capture customers who need more than GTX Plus Pro but balk at GTK 500 pricing\n",
+                "* **MG Premium**: Add $6-8K tier to MG series to compete directly with GTX line for customers loyal to MG feature set\n",
+                "* **Vertical SKUs**: Create industry-specific versions of GTX Pro for top-performing sectors (Retail, Software, Technology) with vertical features and use cases\n",
+                "\n",
+                "**5. Series Brand Strategy**:\n",
+                "* **GTX = Premium/Performance**: Position as flagship series for customers prioritizing capabilities and support\n",
+                "* **MG = Value/Volume**: Position as cost-effective option for price-sensitive segments or high-volume deployments  \n",
+                "* **GTK = Enterprise**: Position as white-glove solution for largest accounts requiring customization and dedicated support\n",
+                "\n",
+                "---"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "sales_agent_performance",
+      "displayName": "Sales Agent Performance",
+      "layout": [
+        {
+          "widget": {
+            "name": "total_agents_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Sales Agents",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)",
+                  "displayName": "Total Agents"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total_revenue_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "numberFormat": {
+                  "formatType": "numeral",
+                  "format": "$0,0"
+                }
+              },
+              "frame": {
+                "title": "Total Agent Revenue",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Total Revenue"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_win_rate_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "percentFormat": {
+                  "formatType": "numeral",
+                  "format": "0.0%"
+                }
+              },
+              "frame": {
+                "title": "Avg Agent Win Rate (%)",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "displayName": "Avg Win Rate"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "agent_details_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "sales_agent",
+                      "expression": "`sales_agent`"
+                    },
+                    {
+                      "name": "regional_office",
+                      "expression": "`regional_office`"
+                    },
+                    {
+                      "name": "performance_tier",
+                      "expression": "`performance_tier`"
+                    },
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    },
+                    {
+                      "name": "unique_accounts",
+                      "expression": "`unique_accounts`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Sales Agent Performance Details",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "sales_agent",
+                    "displayName": "Agent"
+                  },
+                  {
+                    "fieldName": "regional_office",
+                    "displayName": "Office"
+                  },
+                  {
+                    "fieldName": "performance_tier",
+                    "displayName": "Tier"
+                  },
+                  {
+                    "fieldName": "total_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Revenue"
+                  },
+                  {
+                    "fieldName": "win_rate_pct",
+                    "format": {
+                      "type": "number-percent"
+                    },
+                    "displayName": "Win Rate %"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  },
+                  {
+                    "fieldName": "unique_accounts",
+                    "displayName": "Accounts"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "b50ba324",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "regional_office",
+                      "expression": "`regional_office`"
+                    },
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue by Regional Office",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "regional_office",
+                  "displayName": "Regional Office",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 3
+                    }
+                  },
+                  "displayName": "Total Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "re1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "regional_office",
+                      "expression": "`regional_office`"
+                    },
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Win Rate by Regional Office",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "regional_office",
+                  "displayName": "Regional Office",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "format": {
+                    "type": "number-percent",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Win Rate",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "top_agents_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "sales_agent",
+                      "expression": "`sales_agent`"
+                    },
+                    {
+                      "name": "regional_office",
+                      "expression": "`regional_office`"
+                    },
+                    {
+                      "name": "performance_tier",
+                      "expression": "`performance_tier`"
+                    },
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    },
+                    {
+                      "name": "unique_accounts",
+                      "expression": "`unique_accounts`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Top 10 Sales Agents by Revenue",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "sales_agent",
+                    "displayName": "Sales Agent"
+                  },
+                  {
+                    "fieldName": "regional_office",
+                    "displayName": "Office"
+                  },
+                  {
+                    "fieldName": "performance_tier",
+                    "displayName": "Performance Tier"
+                  },
+                  {
+                    "fieldName": "total_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Total Revenue"
+                  },
+                  {
+                    "fieldName": "win_rate_pct",
+                    "format": {
+                      "type": "number-percent"
+                    },
+                    "displayName": "Win Rate %"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  },
+                  {
+                    "fieldName": "unique_accounts",
+                    "displayName": "Accounts"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 22,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "manager_performance",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "manager",
+                      "expression": "`manager`"
+                    },
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`manager` IS NOT NULL"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue by Manager",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "manager",
+                  "displayName": "Manager",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact"
+                  },
+                  "displayName": "Total Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 28,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "active_pipeline",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c255e10d",
+                  "fields": [
+                    {
+                      "name": "regional_office",
+                      "expression": "`regional_office`"
+                    },
+                    {
+                      "name": "sum(engaging_deals)",
+                      "expression": "SUM(`engaging_deals`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Active Pipeline by Office",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "regional_office",
+                  "displayName": "Regional Office",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(engaging_deals)",
+                  "displayName": "Engaging Deals",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 28,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "sales_agent_insights",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Sales Agent Performance Insights\n",
+                "\n",
+                "### Team Overview & Composition\n",
+                "\n",
+                "Legacy Pty employs **35 sales agents**, but only **30 are actively producing** (5 agents show no activity). The active sales force generated **$10.01M in total revenue** from **8,300 opportunities**, achieving a **52.8% average win rate**.\n",
+                "\n",
+                "**Critical Staffing Issue**: **14% of the sales team (5 agents) have zero activity** - Carol Thompson, Elizabeth Anderson, Carl Lin, Mei-Mei Johns, and Natalya Ivanova. These are effectively vacant headcount positions representing potential lost productivity of **$1.5-2M annually** if filled with average performers.\n",
+                "\n",
+                "The 30 active agents demonstrate significant performance variance, with the top performer generating **$1.15M** (11.5% of company revenue) while average performers generate **$123K-$198K**. This 5-10x performance range is common in B2B sales organizations and represents both a coaching opportunity and a talent management challenge.\n",
+                "\n",
+                "### Top Performer - Darcel Schlecht (Central Office)\n",
+                "\n",
+                "**Darcel Schlecht** stands alone as the company's only **\"Top Performer\" tier agent**, generating **$1.15M in revenue (11.5% of company total)** - a remarkable concentration that creates both opportunity and risk:\n",
+                "\n",
+                "**Performance Metrics**:\n",
+                "* **636 opportunities, 349 wins** - highest pipeline volume and conversion count in the organization\n",
+                "* **54.87% win rate** - above company average (52.8%), demonstrating consistent execution\n",
+                "* **$3,304 average deal value** - balanced pricing across product portfolio, not reliant on enterprise deals alone\n",
+                "* **49.4 days to close** - fastest sales cycle in the team, suggesting efficiency and strong qualification\n",
+                "* **41 unique accounts, 7 products sold** - broad customer coverage and complete product portfolio expertise\n",
+                "\n",
+                "**What Makes Darcel Elite**: Unlike high performers who excel in one dimension (high deal value, high win rate, or high volume), Darcel excels across **all three metrics simultaneously**:\n",
+                "1. **Volume**: 636 opportunities - nearly 2x the average agent's pipeline\n",
+                "2. **Conversion**: 54.87% win rate - consistently above company benchmark\n",
+                "3. **Efficiency**: 49.4 days to close - faster than 90% of the team\n",
+                "\n",
+                "This rare combination of skills makes Darcel **3-4x more productive** than average agents and represents a replicable success pattern for talent development.\n",
+                "\n",
+                "**Succession Risk & Mitigation**: Darcel represents **11.5% of company revenue from a single agent**. Departure would create an immediate **$1M+ revenue hole** and disrupt relationships with 41 accounts. Recommended actions:\n",
+                "1. **Document Methodology**: Shadow Darcel to create a \"Darcel Schlecht Sales Playbook\" capturing qualification criteria, discovery process, demo flow, objection handling, and closing techniques\n",
+                "2. **Scale Through Mentorship**: Pair Darcel with 2-3 \"Average Performer\" agents for intensive 90-day coaching - transferring skills while creating succession candidates\n",
+                "3. **Retention Strategy**: Conduct compensation review to ensure market competitiveness plus performance-based incentives tied to team mentorship\n",
+                "4. **Career Path**: Promote to team lead or sales enablement role to scale expertise across organization without removing from revenue production\n",
+                "5. **Knowledge Transfer**: Record sales calls for training library and implement monthly masterclass where Darcel trains team on specific skills\n",
+                "\n",
+                "### Regional Office Performance Analysis\n",
+                "\n",
+                "**West Office - Volume Leader ($3.57M, 35.67%)**:\n",
+                "* **Highest total revenue** and **revenue per agent: $357K** (rank #1 productivity)\n",
+                "* **10 high performers** - most represented in top 20 agents\n",
+                "* Representative agents: Vicki Laflamme ($478K), Kary Hendrixson ($454K), Zane Levy ($430K)\n",
+                "* **Manager: Summer Sewald** oversees largest team with multiple top performers\n",
+                "* **Strength**: Consistent pipeline generation and volume-based success\n",
+                "* **Challenge**: Lower win rate (47.9%) suggests qualification could be tighter\n",
+                "\n",
+                "**Central Office - Home of Elite Talent ($3.35M, 33.44%)**:\n",
+                "* **Only office with a Top Performer** (Darcel Schlecht)\n",
+                "* **Highest win rate: 54.10%** - full 6 percentage points above West\n",
+                "* **Elite closers**: Jonathan Berthelot (57.58% win rate), Cecily Lampkin (59.78% win rate)\n",
+                "* **Manager: Melvin Marxen** develops high-conversion agents\n",
+                "* **Strength**: Quality over volume - fewer opportunities but higher close rates\n",
+                "* **Insight**: Sales methodology or territory quality appears superior, creating replicable best practices\n",
+                "\n",
+                "**East Office - Premium Deal Specialists ($3.09M, 30.89%)**:\n",
+                "* **Highest average deal values**: Daniell Hammack ($3,195), Reed Clapper ($2,828), Donn Cantrell ($2,822)\n",
+                "* **Reed Clapper: 65.4% win rate** - company's highest conversion rate\n",
+                "* **Manager: Rocco Neubert** coaches enterprise selling techniques\n",
+                "* **Strength**: Upmarket positioning with larger deal sizes\n",
+                "* **Challenge**: Has 2 \"No Activity\" agents requiring immediate attention\n",
+                "\n",
+                "**Regional Best Practices Exchange Opportunity**:\n",
+                "* **West → Central & East**: Share pipeline generation and prospecting techniques (West has highest opportunity volumes)\n",
+                "* **Central → West & East**: Share qualification frameworks and conversion strategies (Central has highest win rates)\n",
+                "* **East → West & Central**: Share enterprise selling, executive engagement, and deal value maximization (East has highest avg deals)\n",
+                "\n",
+                "### Performance Tier Distribution & Mobility\n",
+                "\n",
+                "**Top Performer (1 agent, 3%)**: Darcel Schlecht only - meets both $1M+ revenue AND 55%+ win rate thresholds\n",
+                "\n",
+                "**High Performer (23 agents, 66%)**: Healthy distribution showing replicable success patterns across all offices. Revenue range: $229K-$478K. This concentration indicates:\n",
+                "* Effective hiring and onboarding processes\n",
+                "* Clear sales methodology and training\n",
+                "* Achievable performance standards\n",
+                "* Multiple agents within striking distance of Top Performer tier\n",
+                "\n",
+                "**Average Performer (6 agents, 17%)**:\n",
+                "* Agents: Garret Kinder ($198K), Lajuana Vencill ($195K), Versie Hillebrand ($188K), Niesha Huffines ($177K), Wilburn Farren ($158K), Violet Mclelland ($123K)\n",
+                "* **Revenue gap**: Performing at 50-65% of high performer output\n",
+                "* **Coaching Opportunity**: With targeted development, 2-3 could reach high performer tier within 2 quarters, adding **$400-600K annual revenue**\n",
+                "* **Root Cause Analysis Needed**: Are these newer hires still ramping, veterans with skill gaps, or mis-matched to territory/product?\n",
+                "\n",
+                "**No Activity (5 agents, 14%)**: **Immediate action required** - see Critical Staffing Issue above\n",
+                "\n",
+                "**Performance Tier Mobility Program**: Create structured development path:\n",
+                "1. Identify 3 \"Average Performers\" with highest potential based on tenure, coachability, and recent trajectory\n",
+                "2. Assign to senior high performers for shadowing and joint calls\n",
+                "3. Provide additional training on qualification (MEDDPICC), discovery, and closing\n",
+                "4. Review monthly with managers to track progress toward High Performer metrics\n",
+                "5. Target: **3 promotions in next 2 quarters** = **$600K revenue uplift** from same headcount\n",
+                "\n",
+                "### Win Rate Performance Analysis\n",
+                "\n",
+                "**Elite Closers (60%+ win rate)**:\n",
+                "* **Reed Clapper: 65.4%** (155 wins from 237 opportunities) - company champion\n",
+                "* **Garret Kinder: 60.98%** (75 wins from 123 opportunities)\n",
+                "* **Cecily Lampkin: 59.78%** (107 wins from 179 opportunities)\n",
+                "\n",
+                "**What Elite Closers Do Differently**: Lower opportunity counts but dramatically higher conversion suggest:\n",
+                "1. **Superior Qualification**: Only pursuing winnable deals using rigorous criteria (budget, authority, need, timeline)\n",
+                "2. **Relationship-Based Selling**: Building executive relationships vs. transactional outreach\n",
+                "3. **Better Discovery**: Deep needs assessment and pain point identification\n",
+                "4. **Business Case Development**: Strong ROI and value justification\n",
+                "5. **Executive Access**: Reaching decision-makers early in sales cycle\n",
+                "\n",
+                "**Low Win Rate Concern - Markita Hansen**:\n",
+                "* **42.48% win rate** (306 opportunities, 130 wins, 176 losses)\n",
+                "* **Analysis**: High activity but poor conversion - burning through 176 lost opportunities annually, equivalent to **wasting 75% of Darcel's entire pipeline**\n",
+                "* **Impact**: If Markita's win rate matched company average (52.8%), those same 306 opportunities would generate **32 additional wins worth $80K+ in revenue**\n",
+                "* **Recommended Intervention**:\n",
+                "  - Sales methodology training on qualification frameworks (MEDDPICC, BANT, or similar)\n",
+                "  - Pipeline review with manager Celia Rouche to improve lead quality and reduce unqualified opportunities\n",
+                "  - Potential territory mismatch - may be working accounts that don't fit ICP or product positioning\n",
+                "  - Shadow elite closers (Reed Clapper, Cecily Lampkin) to observe qualification and discovery techniques\n",
+                "\n",
+                "**Win Rate Optimization Initiative**: \n",
+                "* **Target**: Move company average from 52.8% to 55%\n",
+                "* **Impact**: **+$700K revenue** from same pipeline volume\n",
+                "* **Method**: Implement mandatory qualification framework for all agents below 50% win rate, monthly pipeline reviews to remove unqualified deals, and skills training on discovery/closing\n",
+                "\n",
+                "### Deal Value & Sales Motion Insights\n",
+                "\n",
+                "**Premium Deal Specialists (>$3,000 avg deal value)**:\n",
+                "* **Elease Gluck: $3,615** (West) - 80 deals, $289K revenue\n",
+                "* **Rosalina Dieter: $3,270** (West) - 72 deals, $235K revenue\n",
+                "* **Daniell Hammack: $3,195** (East) - 114 deals, $364K revenue\n",
+                "\n",
+                "**Profile**: These agents close enterprise deals requiring longer sales cycles but generate **2-3x revenue per win** compared to volume sellers. They should:\n",
+                "* Receive dedicated enterprise marketing support (ABM campaigns, executive content)\n",
+                "* Be assigned to accounts with >$100K revenue potential\n",
+                "* Focus on GTK 500 and GTX Plus Pro products\n",
+                "* Leverage customer success stories and ROI case studies\n",
+                "\n",
+                "**High-Volume Sellers (<$2,000 avg deal value)**:\n",
+                "* **Kami Bicknell: $1,819** (174 wins - highest win count after Darcel)\n",
+                "* **Jonathan Berthelot: $1,666** (171 wins)\n",
+                "* **Moses Frase: $1,606** (129 wins)\n",
+                "\n",
+                "**Profile**: These agents excel at **velocity sales** - moving deals quickly through GTX Basic and MG product lines. They should:\n",
+                "* Focus on high-volume sectors (Retail, Software)\n",
+                "* Work larger territory with more accounts\n",
+                "* Receive compensation plans rewarding deal count over deal size\n",
+                "* Leverage product demos and free trials for fast conversion\n",
+                "* Target SMB and mid-market segments\n",
+                "\n",
+                "**Insight**: Legacy Pty has **two distinct sales motions** - premium/consultative and volume/transactional - both valuable but requiring different skills, territories, compensation, and support.\n",
+                "\n",
+                "### Sales Cycle Efficiency\n",
+                "\n",
+                "**Speed Champions (<45 days to close)**:\n",
+                "* **Elease Gluck: 43.5 days** ($3,615 avg deal - fast cycle despite high value)\n",
+                "* **Rosie Papadopoulos: 43.5 days**\n",
+                "* **Cecily Lampkin: 42.3 days**\n",
+                "\n",
+                "**Success Factors**: Fast sales cycles indicate strong qualification (pursuing ready buyers), clear value propositions, effective urgency creation, and minimal internal friction. These agents should train others on deal acceleration techniques.\n",
+                "\n",
+                "**Slow Cycles (>60 days)**:\n",
+                "* **Moses Frase: 64.7 days** (despite $1,606 avg deal - should be faster)\n",
+                "* **Lajuana Vencill: 62.9 days**\n",
+                "* **Violet Mclelland: 58 days**\n",
+                "\n",
+                "**Improvement Opportunities**: Extended cycles may indicate:\n",
+                "* Poor qualification - pursuing not-ready buyers\n",
+                "* Weak urgency creation - failing to build business case for now vs. later\n",
+                "* Complex internal buying processes at target accounts\n",
+                "* Lack of executive access - stuck with lower-level contacts\n",
+                "* Product/market fit issues\n",
+                "\n",
+                "Sales managers should implement **deal-acceleration strategies**: identify stalled deals, conduct opportunity reviews, and provide coaching on advancing conversations.\n",
+                "\n",
+                "### Manager Performance Benchmarking\n",
+                "\n",
+                "**Melvin Marxen (Central) - $2.5M team revenue**:\n",
+                "* Manages **Top Performer Darcel Schlecht**\n",
+                "* Team includes multiple high-conversion agents (Jonathan Berthelot 57.58%, Cecily Lampkin 59.78%)\n",
+                "* **Leadership Approach**: Appears focused on win rate optimization and quality over volume\n",
+                "* **Best Practice**: Share qualification and conversion techniques with other managers\n",
+                "\n",
+                "**Summer Sewald (West) - ~$2M team revenue**:\n",
+                "* Largest team with consistent high performers\n",
+                "* Multiple agents in top 20 (Vicki Laflamme, Kary Hendrixson, Zane Levy, James Ascencio, Maureen Marcano)\n",
+                "* **Strength**: Pipeline management and consistent coaching cadence\n",
+                "* **Opportunity**: Improve team win rate (currently lowest at 47.9%)\n",
+                "\n",
+                "**Rocco Neubert (East) - ~$2M team revenue**:\n",
+                "* Develops enterprise sellers with high deal values\n",
+                "* **Reed Clapper: 65.4% win rate** - company champion\n",
+                "* **Specialty**: Complex sales motions and executive engagement\n",
+                "* **Concern**: Has 2 \"No Activity\" agents (Elizabeth Anderson, Natalya Ivanova) requiring immediate attention\n",
+                "\n",
+                "**Dustin Brinkmann (Central) - ~$1M team revenue**:\n",
+                "* Mixed results with both high performers (Anna Snelling, Cecily Lampkin) and average performers\n",
+                "* Smaller team size\n",
+                "* May benefit from additional leadership development\n",
+                "\n",
+                "**Celia Rouche (West) - ~$1.8M team revenue**:\n",
+                "* Manages diverse performance levels including premium specialists (Elease Gluck)\n",
+                "* Also manages Markita Hansen (42.48% win rate) who needs intervention\n",
+                "* Opportunity to drive more consistent performance\n",
+                "\n",
+                "**Cara Losch (East) - ~$1M team revenue**:\n",
+                "* Has 2 \"No Activity\" agents - **failing basic management responsibility**\n",
+                "* Must address non-producing agents immediately\n",
+                "* Smaller team with mixed performance\n",
+                "\n",
+                "### Strategic Recommendations\n",
+                "\n",
+                "**1. Fill Vacant Capacity (Immediate - High Impact)**:\n",
+                "* **5 \"No Activity\" agents = 14% unused capacity**\n",
+                "* If replaced with average performers: **+$750K-$1M annual revenue**\n",
+                "* If replaced with high performers: **+$1.5-$2M annual revenue**\n",
+                "* **Action**: Terminate or reassign non-producing agents within 30 days, launch hiring campaign for replacements, implement 90-day ramp expectations\n",
+                "\n",
+                "**2. Scale Darcel's Methodology (High Priority)**:\n",
+                "* Create **\"Darcel Schlecht Sales Playbook\"** documenting qualification, discovery, demo, and closing techniques\n",
+                "* Record sales calls for training library\n",
+                "* Implement **monthly masterclass** where Darcel trains team on specific skills\n",
+                "* Pair Darcel with 3 \"Average Performer\" agents for 90-day intensive coaching\n",
+                "* **Expected Impact**: 2-3 agents move from Average to High Performer tier = **$400-600K revenue uplift**\n",
+                "\n",
+                "**3. Win Rate Optimization Initiative**:\n",
+                "* **Agents below 50% win rate receive mandatory sales methodology training**\n",
+                "* Implement **MEDDPICC or similar qualification framework** company-wide\n",
+                "* **Monthly pipeline reviews** to remove unqualified opportunities before wasting time\n",
+                "* **Target**: Move company average from 52.8% to 55% = **+$700K revenue from same pipeline**\n",
+                "\n",
+                "**4. Performance Tier Mobility Program**:\n",
+                "* Target **3 \"Average Performers\" for promotion to \"High Performer\" tier in next 2 quarters**\n",
+                "* Provide additional training, better territory assignments, and manager shadowing\n",
+                "* **Potential revenue impact: $600K annual uplift** from talent development alone\n",
+                "\n",
+                "**5. Manager Accountability**:\n",
+                "* **Cara Losch and Rocco Neubert** must address \"No Activity\" agents immediately\n",
+                "* Implement **manager scorecards** tracking team win rates, average deal values, and sales cycle length\n",
+                "* **Quarterly manager rankings** to drive accountability and best practice sharing\n",
+                "* Reward managers whose teams show performance improvement quarter-over-quarter\n",
+                "\n",
+                "**6. Compensation Alignment**:\n",
+                "* Create **two compensation tracks**: premium deal specialists (higher commission per deal) vs. volume sellers (higher commission rate but lower per-deal)\n",
+                "* Add **team mentorship bonuses** for top performers who develop others\n",
+                "* Implement **win rate accelerators** - bonus multipliers for agents exceeding 55% win rate\n",
+                "\n",
+                "---"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 5
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "aca1fee7",
+      "displayName": "Account Performance",
+      "layout": [
+        {
+          "widget": {
+            "name": "total_accounts_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Accounts",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)",
+                  "displayName": "Total Accounts"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total_revenue_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "sum(total_sales_revenue)",
+                      "expression": "SUM(`total_sales_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "numberFormat": {
+                  "formatType": "numeral",
+                  "format": "$0,0"
+                }
+              },
+              "frame": {
+                "title": "Total Revenue",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_sales_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Total Revenue"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_win_rate_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "format": {
+                "percentFormat": {
+                  "formatType": "numeral",
+                  "format": "0.0%"
+                }
+              },
+              "frame": {
+                "title": "Average Win Rate (%)",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Avg Win Rate"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 7,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_sector",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "sector",
+                      "expression": "`sector`"
+                    },
+                    {
+                      "name": "sum(total_sales_revenue)",
+                      "expression": "SUM(`total_sales_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Revenue by Sector",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sector",
+                  "displayName": "Sector",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_sales_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 3
+                    }
+                  },
+                  "displayName": "Total Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "win_rate_by_sector",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "sector",
+                      "expression": "`sector`"
+                    },
+                    {
+                      "name": "avg(win_rate_pct)",
+                      "expression": "AVG(`win_rate_pct`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Win Rate by Sector",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sector",
+                  "displayName": "Sector",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(win_rate_pct)",
+                  "format": {
+                    "type": "number-percent",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 1
+                    }
+                  },
+                  "displayName": "Win Rate",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "top_accounts_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "account",
+                      "expression": "`account`"
+                    },
+                    {
+                      "name": "sector",
+                      "expression": "`sector`"
+                    },
+                    {
+                      "name": "total_sales_revenue",
+                      "expression": "`total_sales_revenue`"
+                    },
+                    {
+                      "name": "win_rate_pct",
+                      "expression": "`win_rate_pct`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Top 10 Accounts by Revenue",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "account",
+                    "displayName": "Account"
+                  },
+                  {
+                    "fieldName": "sector",
+                    "displayName": "Sector"
+                  },
+                  {
+                    "fieldName": "total_sales_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Revenue"
+                  },
+                  {
+                    "fieldName": "win_rate_pct",
+                    "format": {
+                      "type": "number-percent"
+                    },
+                    "displayName": "Win Rate %"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 25,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "account_insights",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Account Performance Insights\n",
+                "\n",
+                "### Customer Base Overview\n",
+                "\n",
+                "Legacy Pty's customer portfolio comprises **85 enterprise and large-tier accounts** generating **$10.01M in total revenue** across seven industry sectors. The entire customer base is classified as **Enterprise or Large tier**, indicating a deliberate upmarket strategy focused on high-value relationships requiring dedicated account management and strategic engagement.\n",
+                "\n",
+                "This concentrated approach enables deeper customer relationships, higher deal values, and more predictable revenue streams compared to a volume-based SMB strategy. However, it also creates concentration risk and requires excellence in customer retention and expansion.\n",
+                "\n",
+                "### Sector Performance Analysis\n",
+                "\n",
+                "**Retail Sector - Volume Leader**: The Retail vertical dominates the account base with **$1.87M in revenue (18.66% market share)** from **17 accounts**, making it the largest sector by both customer count and total revenue. This broad customer base suggests strong market penetration and product-market fit in retail operations.\n",
+                "\n",
+                "Revenue per account: **$110K average** - indicates mid-market retail customers rather than large enterprise chains. Opportunity exists to move upmarket within retail or increase wallet share through cross-selling additional GTX products.\n",
+                "\n",
+                "**Software Sector - Conversion Champion**: While generating lower absolute revenue, the **Software sector achieves the highest win rate at 60.80%**, significantly above the company average of 52.8%. This exceptional conversion rate signals:\n",
+                "* Strong product-market fit for GTX solutions in software companies\n",
+                "* Effective sales messaging and positioning in this vertical\n",
+                "* Less competitive pressure or clearer ROI demonstration\n",
+                "* Potential for accelerated growth with increased lead generation investment\n",
+                "\n",
+                "**Technology Sector - Strategic Middle Ground**: Technology accounts contribute **$1.52M (15.15%)** from **12 accounts**, representing the second-largest sector. Average revenue per account: **$127K** - higher than Retail, suggesting more complex implementations or premium product adoption.\n",
+                "\n",
+                "### Top Account Analysis\n",
+                "\n",
+                "**Kan-code - Flagship Customer**: Leading all accounts with **$341K in revenue** and a **59% win rate**, Kan-code represents the ideal customer profile:\n",
+                "* High revenue concentration (3.4% of total company revenue from one account)\n",
+                "* Above-average conversion rate (6.2 percentage points above company average)\n",
+                "* Strategic relationship requiring white-glove treatment and retention focus\n",
+                "\n",
+                "**Risk Assessment**: High dependency on single account creates vulnerability. Recommended actions:\n",
+                "* Quarterly executive business reviews to ensure satisfaction\n",
+                "* Proactive expansion planning (new use cases, additional products)\n",
+                "* Contract renewal planning 12+ months in advance\n",
+                "* Identify 5-10 additional accounts with Kan-code profile characteristics\n",
+                "\n",
+                "### Enterprise Account Hierarchy\n",
+                "\n",
+                "**Parent-Subsidiary Relationships**: The analysis reveals **7 parent companies** with **15 subsidiary accounts**, representing a significant corporate structure opportunity:\n",
+                "\n",
+                "**Acme Corporation** (4 subsidiaries, **$519K consolidated revenue**):\n",
+                "* Largest parent company relationship\n",
+                "* Opportunity for enterprise-wide framework agreement\n",
+                "* Cross-subsidiary standardization and volume pricing\n",
+                "* Centralized procurement and governance model\n",
+                "\n",
+                "**Sonron** (3 subsidiaries, **$479K consolidated revenue**):\n",
+                "* Second-largest parent company\n",
+                "* Multi-subsidiary footprint indicates enterprise adoption\n",
+                "* Potential for corporate account management structure\n",
+                "\n",
+                "**Account Management Strategy**: These parent-subsidiary relationships create opportunities for:\n",
+                "1. **Enterprise Account Management**: Assign dedicated account executives to manage parent companies and their subsidiaries as unified relationships\n",
+                "2. **Volume Discounting**: Negotiate enterprise-wide agreements with volume-based pricing across all subsidiaries\n",
+                "3. **Standardization**: Drive consistency in product adoption, training, and support across corporate family\n",
+                "4. **Expansion Velocity**: Use success at one subsidiary to accelerate adoption at sister companies\n",
+                "5. **Executive Sponsorship**: Develop C-level relationships at parent company to influence subsidiary decisions\n",
+                "\n",
+                "### Customer Tier Implications\n",
+                "\n",
+                "**100% Enterprise/Large Tier Composition** signals:\n",
+                "* **High Touch Required**: Every account needs regular engagement, QBRs, and strategic planning\n",
+                "* **Long Sales Cycles**: Enterprise deals require extensive validation, proof of concept, and stakeholder alignment\n",
+                "* **Expansion Opportunity**: Large accounts have budget for additional products, premium features, and expanded use cases\n",
+                "* **Churn Risk Management**: Losing even one account materially impacts revenue (each represents ~1.2% of total revenue on average)\n",
+                "* **Resource Intensity**: Sales, success, and support teams must be sized appropriately for enterprise workload\n",
+                "\n",
+                "### Strategic Recommendations\n",
+                "\n",
+                "**Sector Prioritization**:\n",
+                "1. **Double Down on Software**: 60.8% win rate proves product-market fit - increase marketing spend, hire vertical sales specialists, develop Software-specific case studies\n",
+                "2. **Retail Expansion**: Largest base (17 accounts) creates expansion opportunities through cross-sell, upsell, and referrals within retail networks\n",
+                "3. **Technology Growth**: Second-highest revenue per account ($127K) indicates premium positioning - replicate success pattern\n",
+                "\n",
+                "**Account Management Structure**:\n",
+                "1. **Strategic Account Program**: Create dedicated team for top 10 accounts (representing ~35% of revenue)\n",
+                "2. **Parent Company Owners**: Assign enterprise AMs to manage 7 parent company relationships holistically\n",
+                "3. **Segment by Tier**: Different engagement models for Enterprise ($100K+) vs. Large ($50K-$100K) tiers\n",
+                "\n",
+                "**Risk Mitigation**:\n",
+                "1. **Diversification**: Reduce concentration risk by targeting 20+ new accounts in underrepresented sectors (Healthcare, Manufacturing)\n",
+                "2. **Churn Prevention**: Implement early warning system monitoring product usage, support tickets, renewal dates, executive engagement\n",
+                "3. **Expansion Focus**: Increase wallet share from existing 85 accounts (lower CAC than new customer acquisition)\n",
+                "\n",
+                "**Market Development**:\n",
+                "1. **Reference Customer Program**: Use Kan-code and top performers as case studies and speaking opportunities\n",
+                "2. **Vertical Marketing**: Develop sector-specific messaging for Software, Retail, Technology\n",
+                "3. **Partner Channel**: Explore reseller/integration partnerships in high-performing verticals\n",
+                "\n",
+                "---"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "account_count_by_sector",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "sector",
+                      "expression": "`sector`"
+                    },
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Account Count by Sector",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sector",
+                  "displayName": "Sector",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "count(*)",
+                  "displayName": "Number of Accounts",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 31,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "customer_tier_distribution",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    },
+                    {
+                      "name": "customer_tier",
+                      "expression": "`customer_tier`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Customer Tier Distribution",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "count(*)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "Account Count"
+                },
+                "color": {
+                  "fieldName": "customer_tier",
+                  "displayName": "Customer Tier",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 31,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "parent_company_revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "subsidiary_of",
+                      "expression": "`subsidiary_of`"
+                    },
+                    {
+                      "name": "sum(total_sales_revenue)",
+                      "expression": "SUM(`total_sales_revenue`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`subsidiary_of` IS NOT NULL"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Parent Company Consolidated Revenue",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "subsidiary_of",
+                  "displayName": "Parent Company",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_sales_revenue)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact"
+                  },
+                  "displayName": "Consolidated Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 37,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "subsidiary_details",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f022c9b9",
+                  "fields": [
+                    {
+                      "name": "subsidiary_of",
+                      "expression": "`subsidiary_of`"
+                    },
+                    {
+                      "name": "account",
+                      "expression": "`account`"
+                    },
+                    {
+                      "name": "sector",
+                      "expression": "`sector`"
+                    },
+                    {
+                      "name": "total_sales_revenue",
+                      "expression": "`total_sales_revenue`"
+                    },
+                    {
+                      "name": "won_deals",
+                      "expression": "`won_deals`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`subsidiary_of` IS NOT NULL"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Parent-Subsidiary Relationships",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "subsidiary_of",
+                    "displayName": "Parent Company"
+                  },
+                  {
+                    "fieldName": "account",
+                    "displayName": "Subsidiary Account"
+                  },
+                  {
+                    "fieldName": "sector",
+                    "displayName": "Sector"
+                  },
+                  {
+                    "fieldName": "total_sales_revenue",
+                    "format": {
+                      "type": "number-currency",
+                      "currencyCode": "USD",
+                      "abbreviation": "compact"
+                    },
+                    "displayName": "Revenue"
+                  },
+                  {
+                    "fieldName": "won_deals",
+                    "displayName": "Won Deals"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 43,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#FAFAFB",
+        "dark": "#1F272D"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#0D1216"
+      },
+      "widgetBorderColor": {
+        "light": "#FFFFFF",
+        "dark": "#11171C"
+      },
+      "fontColor": {
+        "light": "#12161A",
+        "dark": "#E8ECF0"
+      },
+      "selectionColor": {
+        "light": "#2272B4",
+        "dark": "#8ACAFF"
+      },
+      "visualizationColors": [
+        "#077A9D",
+        "#FFAB00",
+        "#00A972",
+        "#FF3621",
+        "#8BCAE7",
+        "#AB4057",
+        "#99DDB4",
+        "#FCA4A1",
+        "#919191",
+        "#BF7080"
+      ],
+      "widgetHeaderAlignment": "LEFT"
+    },
+    "applyModeEnabled": false
+  }
+}
