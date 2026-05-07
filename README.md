@@ -2,6 +2,7 @@
 
 Project Summary
 Sales Analytics Data Pipeline - Databricks Lakeflow (LEGACY_INC)
+
 This is a enterprise-grade sales analytics platform using Databricks Lakeflow Spark Declarative Pipelines with complete medallion architecture (Bronze/Silver/Gold layers). The pipeline processes 116K+ raw records into a dimensional star schema and business-ready analytics tables.
 
 Technical Architecture:
